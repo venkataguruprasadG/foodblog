@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-SHOP</title>
+    <title>Login - E-Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <nav class="navbar">
@@ -23,6 +24,23 @@
             <button type="submit">Search</button>
         </div>
     </nav>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-footer">
+                    <p>Don't have an account? <a href="/register">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
