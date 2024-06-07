@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: darkmagenta;
     padding: 10px 20px;
 }
 
@@ -52,12 +52,32 @@ body {
 .search-bar button {
     padding: 5px 10px;
     font-size: 16px;
-    background-color: #ff6347;
+    background-color: #ec3e1f;
     color: #fff;
     border: none;
     border-radius: 3px;
     margin-left: 5px;
     cursor: pointer;
+}
+.sub-navbar {
+    background-color: #bd8fb1;
+    padding: 15px 30px;
+}
+
+.sub-nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-nav-links li {
+    margin-left: 15px;
+}
+
+.sub-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
 }
 /*@media (max-width: 768px) {
     .nav-links {
@@ -69,6 +89,15 @@ body {
     .nav-links li {
         margin: 10px 0;
     }
+    .sub-nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-nav-links li {
+        margin: 10px 0;
+    }
+}
 }
 */
 
