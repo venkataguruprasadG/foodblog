@@ -1,98 +1,118 @@
+/* Catalog Page Styles */
+
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #23527c;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #23527c;
+  border-color: #1a1d23;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
-  
-  .carousel {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
+
+  .card {
+    margin-bottom: 20px;
   }
-  
-  .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  
-  .carousel-item {
-    min-width: 100%;
-    position: relative;
+
+  .card {
+    margin-bottom: 15px;
   }
-  
-  .carousel img {
-    width: 100%;
-    vertical-align: middle;
+
+  .card-body {
+    padding: 15px;
   }
-  
-  .carousel-button {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
+
+  .card-title {
     font-size: 16px;
   }
-  
-  .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+
+  .card-text {
+    font-size: 12px;
   }
-  
-  .carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .card-body {
     padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
   }
-  
-  .carousel-control.prev {
-    left: 10px;
+
+  .card-title {
+    font-size: 14px;
   }
-  
-  .carousel-control.next {
-    right: 10px;
+
+  .card-text {
+    font-size: 10px;
   }
-  
-  .carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+
+  .btn-primary {
+    font-size: 12px;
+    padding: 6px 12px;
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .carousel {
-      max-width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  
-    .carousel-control {
-      padding: 8px;
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .carousel-button {
-      font-size: 12px;
-      padding: 6px 12px;
-    }
-  
-    .carousel-control {
-      padding: 6px;
-      font-size: 14px;
-    }
-  }
-  
+}
